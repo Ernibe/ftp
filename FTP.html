@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Find the precious</title>
 </head>
 <body>
@@ -14,8 +15,8 @@
     			<li><a href="#aboutthering">About the Ring</a></li>
     			<li><a href="#jointhearmy">Join the Army</a></li>
     			<li><a href="#contactus">Contact Us</a></li>
-          <li><h1>Find The Precious</h1></li>
-    		</ul>
+        </ul>
+        <h1>Find The Precious</h1>
     	</nav>
       <section>
         <ul>
@@ -57,11 +58,14 @@
   	<h2>About the ring</h2>
   	 	<table>
   	 		<caption>Ring Capabilities</caption>
+        <thead>
   	 			<tr>
   	 				<th>Feature</th>
   	 				<th>Description</th>
-  	 			</tr> 
-  	 			<tr>
+  	 			</tr>
+        </thead>
+        <tbody>   
+  	 		  <tr>
   	 				<td>Main</td>
   	 				<td>One ring rules them all</td>
   	 			</tr>
@@ -72,7 +76,8 @@
   	 			<tr>
   	 				<td>Power</td>
   	 				<td>Destroy the world</td>
-  	 			</tr>		
+  	 			</tr>
+        </tbody>  		
   		</table>
   		<form method="post" action="traitement.php">
   			<p>
@@ -100,14 +105,14 @@
         <label for="object">Objet</label>
         <input type="text" name="object" id="object"/>
         <label for="message">Your message</label>
-        <input type="text" name="message" id="message"/>
+        <textarea name="message" id="message"></textarea>
       </p>
      </form>   
    </section>
   <footer>
    <br>
      <h2>About Us</h2>
-    Email: <a href="email@example.co.nz">email@example.co.nz</a>
+     <a href="email@example.co.nz">email@example.co.nz</a>
   </footer>	
 </body>
 </html>
